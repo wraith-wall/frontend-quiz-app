@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Frontend Quiz</title>
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <main class="results">
+      <header class="results__header">
+        <div class="results__header-left">
+          <img
+            class="results__type-icon"
+            src="/assets/images/icon-accessibility.svg"
+            alt="Quiz type icon"
+          />
+          <h1 class="results__title">Accessibility</h1>
+        </div>
+        <div class="results__header-right">
+          <div class="results__theme-switch">
+            <img
+              class="results__theme-icon results__theme-icon--sun"
+              src="assets/images/icon-sun-light.svg"
+              alt="Light mode"
+            />
+            <input
+              type="checkbox"
+              class="results__theme-toggle"
+              id="theme-toggle"
+            />
+            <label for="theme-toggle" class="results__theme-label"></label>
+            <img
+              class="results__theme-icon results__theme-icon--moon"
+              src="assets/images/icon-moon-light.svg"
+              alt="Dark mode"
+            />
+          </div>
+        </div>
+      </header>
+      <section class="results__content">
+        <div class="results__left">
+          <h2 class="results__heading">
+            Quiz completed
+            <span class="results__heading-strong">You scored...</span>
+          </h2>
+        </div>
+        <div class="results__right">
+          <div class="results__score">
+            <div class="results__score-type">
+              <img
+                src="assets/images/icon-accessibility.svg"
+                alt="Quiz type icon"
+                class="results__score-icon"
+              />
+              <span class="results__score-subject">Accessibility</span>
+            </div>
+            <div class="results__score-value">
+              <div class="results__score-number">8</div>
+              <div class="results__score-total">out of 10</div>
+            </div>
+          </div>
+          <button class="results__play-again" type="button">Play Again</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

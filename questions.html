@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Frontend Quiz</title>
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <main class="quiz">
+      <header class="quiz__header">
+        <div class="quiz__header-left">
+          <img
+            class="quiz__type-icon"
+            src="/assets/images/icon-accessibility.svg"
+            alt="Quiz type icon"
+          />
+          <h1 class="quiz__title">Accessibility</h1>
+        </div>
+        <div class="quiz__header-right">
+          <div class="quiz__theme-switch">
+            <img
+              class="quiz__theme-icon quiz__theme-icon--sun"
+              src="assets/images/icon-sun-light.svg"
+              alt="Light mode"
+            />
+            <input
+              type="checkbox"
+              class="quiz__theme-toggle"
+              id="theme-toggle"
+            />
+            <label for="theme-toggle" class="quiz__theme-label"></label>
+            <img
+              class="quiz__theme-icon quiz__theme-icon--moon"
+              src="assets/images/icon-moon-light.svg"
+              alt="Dark mode"
+            />
+          </div>
+        </div>
+      </header>
+      <section class="quiz__questions">
+        <div class="quiz__left">
+          <p class="quiz__progress">
+            Question <span class="quiz__progress-number"></span> of 10
+          </p>
+          <h2 class="quiz__question">
+            Which of these color contrast ratios defines the minimum WCAG 2.1
+            Level AA requirement for normal text?
+          </h2>
+          <div class="quiz__progress-bar">
+            <div class="quiz__progress-fill"></div>
+          </div>
+        </div>
+        <div class="quiz__right">
+          <ul class="quiz__answers">
+            <li class="quiz__answer">
+              <input
+                type="radio"
+                class="quiz__answer-input"
+                name="answer"
+                id="answer1"
+              />
+              <label for="answer1" class="quiz__answer-label">
+                <span class="quiz__answer-letter">A</span>
+                <span class="quiz__answer-text"></span>
+              </label>
+            </li>
+            <li class="quiz__answer">
+              <input
+                type="radio"
+                class="quiz__answer-input"
+                name="answer"
+                id="answer2"
+              />
+              <label for="answer2" class="quiz__answer-label">
+                <span class="quiz__answer-letter">B</span>
+                <span class="quiz__answer-text"></span>
+              </label>
+            </li>
+            <li class="quiz__answer">
+              <input
+                type="radio"
+                class="quiz__answer-input"
+                name="answer"
+                id="answer3"
+              />
+              <label for="answer3" class="quiz__answer-label">
+                <span class="quiz__answer-letter">C</span>
+                <span class="quiz__answer-text"></span>
+              </label>
+            </li>
+            <li class="quiz__answer">
+              <input
+                type="radio"
+                class="quiz__answer-input"
+                name="answer"
+                id="answer4"
+              />
+              <label for="answer4" class="quiz__answer-label">
+                <span class="quiz__answer-letter">D</span>
+                <span class="quiz__answer-text"></span>
+              </label>
+            </li>
+          </ul>
+          <button class="quiz__submit" type="button">Submit Answer</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

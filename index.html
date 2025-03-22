@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Frontend Quiz</title>
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <main class="start">
+      <header class="start__header">
+        <div class="start__theme-switch">
+          <img
+            class="start__theme-icon start__theme-icon--sun"
+            src="assets/images/icon-sun-light.svg"
+            alt="Light mode"
+          />
+          <input
+            type="checkbox"
+            class="start__theme-toggle"
+            id="theme-toggle"
+          />
+          <label for="theme-toggle" class="start__theme-label"></label>
+          <img
+            class="start__theme-icon start__theme-icon--moon"
+            src="assets/images/icon-moon-light.svg"
+            alt="Dark mode"
+          />
+        </div>
+      </header>
+      <section class="start__welcome">
+        <div class="start__left">
+          <h1 class="start__title">
+            Welcome to the
+            <span class="start__title-strong">Frontend Quiz!</span>
+          </h1>
+          <p class="start__subtitle">Pick a subject to get started.</p>
+        </div>
+        <div class="start__right">
+          <ul class="start__quiz-list">
+            <li class="start__quiz-item">
+              <a
+                href="questions.html?subject=HTML"
+                class="start__quiz-link start__quiz-link--html"
+                data-subject="html"
+              >
+                <img
+                  class="start__quiz-icon"
+                  src="assets/images/icon-html.svg"
+                  alt="HTML icon"
+                />
+                <span class="start__quiz-text">HTML</span>
+              </a>
+            </li>
+            <li class="start__quiz-item">
+              <a
+                href="questions.html?subject=CSS"
+                class="start__quiz-link start__quiz-link--css"
+                data-subject="css"
+              >
+                <img
+                  class="start__quiz-icon"
+                  src="assets/images/icon-css.svg"
+                  alt="CSS icon"
+                />
+                <span class="start__quiz-text">CSS</span>
+              </a>
+            </li>
+            <li class="start__quiz-item">
+              <a
+                href="questions.html?subject=JavaScript"
+                class="start__quiz-link start__quiz-link--javascript"
+                data-subject="javascript"
+              >
+                <img
+                  class="start__quiz-icon"
+                  src="assets/images/icon-js.svg"
+                  alt="Javascript icon"
+                />
+                <span class="start__quiz-text">Javascript</span>
+              </a>
+            </li>
+            <li class="start__quiz-item">
+              <a
+                href="questions.html?subject=Accessibility"
+                class="start__quiz-link start__quiz-link--accessibility"
+                data-subject="accessibility"
+              >
+                <img
+                  class="start__quiz-icon"
+                  src="assets/images/icon-accessibility.svg"
+                  alt="Accessibility icon"
+                />
+                <span class="start__quiz-text">Accessibility</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
