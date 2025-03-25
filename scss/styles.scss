@@ -89,6 +89,8 @@ body {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .start {
@@ -492,32 +494,29 @@ body {
     align-items: center;
     position: relative;
     justify-content: center;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 56px;
-      height: 56px;
-      background-color: #f6e7ff;
-      border-radius: 8px;
-      z-index: 1;
-      top: 50%;
-      left: 1px;
-      transform: translateY(-50%);
-    }
+  }
+  &__score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: #f6e7ff;
+    border-radius: 8px;
+    z-index: 1;
   }
   &__score-icon {
     width: 40px;
     height: 40px;
     position: relative;
     z-index: 2;
-    margin-left: 3px;
   }
   &__score-subject {
     @extend %fz28;
-    margin-left: 30px;
+    margin-left: 21px;
   }
   &__score-value {
-    margin-top: 47px;
+    margin-top: 34px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -545,7 +544,10 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+  body {
+    background-image: url(../assets/images/pattern-background-tablet-light.svg);
+  }
   .start {
     padding: 54px 64px 241px 64px;
     &__header {
@@ -627,15 +629,16 @@ body {
     &__right {
       width: 100%;
     }
-    &__score-type {
-      &::before {
-        left: 37px;
-      }
+    &__score {
+      padding-inline: 59px;
     }
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
+  body {
+    background-image: url(../assets/images/pattern-background-mobile-light.svg);
+  }
   .start {
     padding: 26px 24px 251px 24px;
     &__header {
@@ -786,7 +789,6 @@ body {
     &__type-icon {
       width: 28.57px;
       height: 28.57px;
-      left: -3px;
     }
     &__theme-switch {
       gap: 8px;
@@ -816,21 +818,18 @@ body {
     &__score {
       height: 242px;
       border-radius: 12px;
-      padding: 38px 120.5px;
+      padding: 38px 40px;
     }
-    &__score-type {
-      &::before {
-        width: 40px;
-        height: 40px;
-        left: -40px;
-      }
+    &__score-container {
+      width: 40px;
+      height: 40px;
     }
     &__score-value {
       margin-top: 21px;
     }
     &__score-subject {
       font-size: 18px;
-      margin-left: 23px;
+      margin-left: 13px;
     }
     &__score-number {
       font-size: 88px;
@@ -842,7 +841,6 @@ body {
     &__score-icon {
       width: 28.57px;
       height: 28.57px;
-      left: 2px;
     }
     &__play-again {
       height: 56px;
